@@ -3,9 +3,8 @@
 /**
  * Module dependencies.
  */
-(() =>{})();
-
-const database = require("../db");
+(async () =>{
+  const database = require("../db");
 const Link = require("../models/link");
 
 await database.sync();
@@ -94,3 +93,6 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+})();
+
+
