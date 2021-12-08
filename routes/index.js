@@ -26,7 +26,7 @@ router.post('/new', async (req, res, next) => {
     code
   })
 
-  res.render('stats', resultado);
+  res.render('stats', resultado.dataValues);
 })
 
 
